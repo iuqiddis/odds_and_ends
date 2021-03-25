@@ -1,6 +1,6 @@
 import os
 import os.path
-dir_del = '/khazaddum/apparate/imports/photos/20200221_the_end_of_us/'
+dir_del = '/khazaddum/alanine/downloads/100CANON/'
 # make sure to include the trailing '/' after the directory name
 
 list_files = [i for i in os.listdir(dir_del) if '.CR2' in i]

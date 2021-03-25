@@ -42,7 +42,9 @@ def logdates(the_year, the_month):
 
     fileID.close()
     
-    return print('\nText file saved in the same directory as "log_dates.txt"\n')
+    print('\nText file saved in the same directory as "log_dates.txt"\n')
+    
+    return 
 
 if __name__ == '__main__':
     the_year = int(input("Year: "))
