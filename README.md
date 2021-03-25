@@ -6,6 +6,8 @@ Little code snippets that I re-use for random projects or habits
 
 **logdates.py** spits out a markdown formatted file to write down daily activities
 
+**convert_flac_to_ogg** batch converts flac files to ogg opus from a directory tree
+
 
 deleting_raw.m is retired
 

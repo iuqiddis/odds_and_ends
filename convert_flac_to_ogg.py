@@ -7,7 +7,7 @@ Quick script to batch convert flac files in different folders to ogg files
 that can be stored with the same directory tree pattern in a different folder
 
 The input directory is a base directory which can have however many sub-directories
-The output directory is where you want the output to go[
+The output directory is where you want the output to go.
 
 My music files are stored as ../music/Artist/Album/track.flac
 The converted files will be saved as ../music_new/Artist/Album/track.ogg
@@ -19,6 +19,8 @@ If the folder that has songs also has cover art, it will be copied as well.
 
 A note on ffmpeg: it's quite verbose and outputs to stderr. If you'd like to see 
     all the output, remove the `stderr=DEVNULL` option from the 'run(...)' call 
+
+Any files that couldn't be encoded will be listed in `../ogg_music/encoding_errors.txt`
 
 This script was used on linux (Ubuntu 20.04)
 """
@@ -89,6 +91,6 @@ def convert_flac_to_ogg(flac_music, ogg_music):
 
 if __name__ == "__main__":
 
-    flac_dir = '/khazaddum/alanine/downloads/music_stuff/flac_dir'
-    ogg_dir = '/khazaddum/alanine/downloads/music_stuff/ogg_dir'
+    flac_dir = '/music/flac_dir'
+    ogg_dir = '/music/ogg_dir'
     errors = convert_flac_to_ogg(flac_dir, ogg_dir)
